@@ -8,5 +8,5 @@ spec:
     protocol: TCP
     targetPort: 5000
   selector:
-    name: flask
+    app: flask
   type: NodePort
