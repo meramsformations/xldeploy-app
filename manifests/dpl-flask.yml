@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flask
   labels:
-    name: flask
+    app: flask
 spec:
   replicas: 1
   selector:
@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        name: flask
+        app: flask
     spec:
       containers:
       - image: flask:TAG
